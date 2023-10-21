@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import '../css/index.css';
 import App from './App';
+<<<<<<< HEAD:hacktx2023-map/src/index.js
 import Navbar from './Navbar'
+=======
+import reportWebVitals from '../svg/reportWebVitals';
+>>>>>>> main:hacktx2023-map/src/js/index.js
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
