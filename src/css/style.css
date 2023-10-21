@@ -8,10 +8,10 @@ body {
 svg path {
     /* fill: 0 */
     stroke: #eee;
-    stroke-width: .25;
+    stroke-width: .1;
 }
 svg path:hover {
-    fill: #006284;
+    fill: #97571a;
     transition: .6s;
     cursor: pointer;
 }
