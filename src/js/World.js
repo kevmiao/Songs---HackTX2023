@@ -1,22 +1,30 @@
 console.log('hi')
 
-const fs = require('fs');
-const csv = require('csv-parser');
+async function parseCSVFile() {
+    try {
+      const response = await fetch('../data/mappingAcronyms.csv'); // Replace 'yourfile.csv' with the actual filename or path
+      if (!response.ok) {
+        throw new Error('Failed to fetch CSV file');
+      }
+      const csvData = await response.text();
+  
+      // Parse the CSV data using Papaparse
+      const results = Papa.parse(csvData, {
+        header: true, // Assumes the first row contains headers
+        dynamicTyping: true, // Automatically detect data types
+      });
+    //   console.log(results.data);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+}
 
-const acronym_table = [];
+parseCSVFile();
+console.log(results.data)
+    
 
-fs.createReadStream('data.csv')
-  .pipe(csv())
-  .on('data', (row) => {
-    // Process each row from the CSV file and add it to the 2D array
-    acronym_table.push(Object.values(row));
-  })
-  .on('end', () => {
-    // The CSV parsing is complete, and the data is in the dataTable.
-    console.log(acronym_table);
-  });
 
-const gElement = doc.querySelector('#au'); // Replace 'au' with the actual id
+// const gElement = doc.querySelector('#au'); // Replace 'au' with the actual id
 
 // // Create an <a> element
 // const aElement = doc.createElement('a');
