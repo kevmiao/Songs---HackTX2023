@@ -1,4 +1,5 @@
 import './App.css';
+import './Navbar.js';
 
 function App() {
   return (
