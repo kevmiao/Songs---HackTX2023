@@ -1,11 +1,12 @@
-import './App.css';
-import './Navbar.js';
+import Navbar from './Navbar';
+import YearBox from './YearBox';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <div className="content">
-        <h1>App Component</h1>
+        <YearBox />
       </div>
     </div>
   );
