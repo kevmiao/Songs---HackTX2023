@@ -30,9 +30,10 @@
   color: #ADD8E6;
 }
 .content {
-  max-width: 100px;
-  margin: 0px;
-  margin-top: 40px auto;
+  /* max-width: 100px; */
+  margin: 150px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
   padding: 20px;
 }
 /* Map styling */

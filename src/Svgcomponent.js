@@ -1,7 +1,7 @@
 function SvgComponent(props) {
   return (
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      width="95%" height="95%" viewBox="30.767 241.591 784.077 458.627" id="world-map">
+      width="100%" height="100%" viewBox="30.767 241.591 784.077 458.627" id="world-map">
       <title>Simple World Map</title>
       <desc>
         Author: Al MacDonald
