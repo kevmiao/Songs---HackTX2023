@@ -44,7 +44,7 @@
   display: flex;
   justify-content: center; 
   align-items: center; 
-}
+} */
 svg path {
   fill: 0;
   stroke: #eee;
@@ -54,4 +54,4 @@ svg path:hover {
   fill: #006284;
   transition: .6s;
   cursor: pointer;
-} */
+}
