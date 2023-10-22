@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 
+/* Navbar styling */
 * {
   margin: 0;
   font-family: "Quicksand";
@@ -34,12 +35,12 @@
   margin-top: 40px auto;
   padding: 20px;
 }
-/* Font color: #ADD8E6 */
+/* Map styling */
 .mapdisplay {
   background-color: #ADD8E6;
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 20;
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
