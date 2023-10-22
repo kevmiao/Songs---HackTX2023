@@ -5,8 +5,9 @@ const Navbar = () => {
                 HackTX 2023 - Map
             </h1>
             <div className="taskbarItems">
+                <a href="/">Home</a>
                 <a href="/statistics">Statistics</a>
-                <a href="/">Mission</a>
+                <a href="/about">About</a>
             </div>
         </nav>
     );

@@ -5,7 +5,6 @@ import img4 from "./Images/TotalInfluentialCountries.png";
 const Statistics = () => {
     return (
         <div className="statistics">
-            <h2>add here</h2>
             <img src={img1} alt=""/>
             <img src={img2} alt=""/>
             <img src={img4} alt=""/>
