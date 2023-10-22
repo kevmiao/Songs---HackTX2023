@@ -1,0 +1,20 @@
+/* Map styling */
+.mapdisplay {
+    background-color: #ADD8E6;
+    height: 100%;
+    margin: 0;
+    padding: 20;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  svg path {
+    /* fill: 0 */
+    stroke: #eee;
+    stroke-width: .25;
+  }
+  svg path:hover {
+    fill: #006284;
+    transition: .6s;
+    cursor: pointer;
+  }
