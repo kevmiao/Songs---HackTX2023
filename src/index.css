@@ -31,7 +31,7 @@
 }
 .content {
   max-width: 100px;
-  margin-left: 1500px;
+  margin: 0px;
   margin-top: 40px auto;
   padding: 20px;
 }
