@@ -5,8 +5,8 @@ async function fetchData() {
 }
 
 async function main() {
-    acronym = await fetchData();
-    // console.log(acronym); // This will be the CSV data as a string
+    const acronym = await fetchData();
+    console.log(acronym); // This will be the CSV data as a string
 
     const gElement = document.getElementById('au'); // Replace 'au' with the actual id
     const aElement = document.createElement('a');
