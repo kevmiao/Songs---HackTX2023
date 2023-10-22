@@ -1,13 +1,56 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-left: 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #333;
+}
+.navbar .taskbarItems {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #ADD8E6;
+}
+.content {
+  max-width: 100px;
+  margin-left: 1500px;
+  margin-top: 40px auto;
+  padding: 20px;
+}
+/* Font color: #ADD8E6 */
+.mapdisplay {
+  background-color: #ADD8E6;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+svg path {
+  /* fill: 0 */
+  stroke: #eee;
+  stroke-width: .25;
+}
+svg path:hover {
+  fill: #006284;
+  transition: .6s;
+  cursor: pointer;
 }

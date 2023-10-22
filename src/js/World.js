@@ -1,38 +1,35 @@
-console.log('hi')
-
-async function parseCSVFile() {
-    try {
-      const response = await fetch('../data/mappingAcronyms.csv'); // Replace 'yourfile.csv' with the actual filename or path
-      if (!response.ok) {
-        throw new Error('Failed to fetch CSV file');
-      }
-      const csvData = await response.text();
-  
-      // Parse the CSV data using Papaparse
-      const results = Papa.parse(csvData, {
-        header: true, // Assumes the first row contains headers
-        dynamicTyping: true, // Automatically detect data types
-      });
-    //   console.log(results.data);
-    } catch (error) {
-      console.error('Error:', error);
-    }
+async function fetchData() {
+    const result = await fetch('../data/mappingAcronyms.csv');
+    const data = await result.text();
+    return data;
 }
 
-parseCSVFile();
-console.log(results.data)
-    
+async function main() {
+    acronym = await fetchData();
+    // console.log(acronym); // This will be the CSV data as a string
+
+    const gElement = document.getElementById('au'); // Replace 'au' with the actual id
+    const aElement = document.createElement('a');
+    aElement.setAttribute('href', 'https://example.com'); // Replace with your desired URL
 
 
-// const gElement = doc.querySelector('#au'); // Replace 'au' with the actual id
+    while (gElement.firstChild) {
+        aElement.appendChild(gElement.firstChild);
+      }
+      
+      // Append the <a> element to <g>
+      gElement.appendChild(aElement);
 
-// // Create an <a> element
-// const aElement = doc.createElement('a');
-// aElement.setAttribute('xlink:title', 'Australia');
-// aElement.setAttribute('xlink:href', 'https://en.wikipedia.org/wiki/Australia');
-// aElement.textContent = 'Australia';
+}
 
-// // Append the <a> element to the <g> element
-// gElement.appendChild(aElement);
+main()
+
+// parseCSVFile().then(() => {
+//     // You can access `parsedData` here, after the data has been parsed
+//     // console.log(parsedData);
+// });
+// console.log(acronym)
+// console.log("hi2")
+
 
 
